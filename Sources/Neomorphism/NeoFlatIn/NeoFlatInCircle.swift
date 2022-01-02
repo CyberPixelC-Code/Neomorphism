@@ -52,8 +52,8 @@ extension NeoFlatInCircle{
     }
 }
 
-private struct NeoFlatInCircle_Previews: PreviewProvider {
-    fileprivate static var previews: some View {
+internal struct NeoFlatInCircle_Previews: PreviewProvider {
+    internal static var previews: some View {
         NeoFlatInCircle()
     }
 }

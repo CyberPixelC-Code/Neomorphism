@@ -59,8 +59,8 @@ extension NeoFlatInRect{
     
 }//Emd pf extension
 
-private struct NeoFlatInRect_Previews: PreviewProvider {
-    fileprivate static var previews: some View {
+internal struct NeoFlatInRect_Previews: PreviewProvider {
+    internal static var previews: some View {
         NeoFlatInRect()
     }
 }

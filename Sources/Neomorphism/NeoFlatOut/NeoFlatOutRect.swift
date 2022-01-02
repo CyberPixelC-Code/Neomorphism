@@ -47,8 +47,8 @@ extension NeoFlatOutRect {
     
 }//End of extension
 
-private struct NeoFlatOutRect_Previews: PreviewProvider {
-    fileprivate static var previews: some View {
+internal struct NeoFlatOutRect_Previews: PreviewProvider {
+    internal static var previews: some View {
         NeoFlatOutRect()
     }
 }
