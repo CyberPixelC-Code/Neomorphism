@@ -47,8 +47,8 @@ extension NeoCurvOutRect{
     
 }//End of extension
 
-struct NeoCurvOutRect_Previews: PreviewProvider {
-    static var previews: some View {
+internal struct NeoCurvOutRect_Previews: PreviewProvider {
+    internal static var previews: some View {
         NeoCurvOutRect()
     }
 }
