@@ -7,14 +7,21 @@
 
 import SwiftUI
 
-internal struct NeoFlatOutRect: View {
+public struct NeoFlatOutRect: View {
     
-    @State private var background = Color(red: 235/255, green: 235/255, blue: 235/255)
-    @State private var darkShadow = Color(red: 140/255, green: 140/255, blue: 140/255)
-    @State private var lightShadow = Color.white
-    @State private var cornerRadius:CGFloat = 20
+    @State private var background: Color
+    @State private var darkShadow: Color
+    @State private var lightShadow: Color
+    @State private var cornerRadius:CGFloat
     
-    internal var body: some View {
+    public init (){
+        background = Color(red: 235/255, green: 235/255, blue: 235/255)
+        darkShadow = Color(red: 140/255, green: 140/255, blue: 140/255)
+        lightShadow = Color.white
+        cornerRadius = 20
+    }
+    
+    public var body: some View {
         RoundedRectangle(cornerRadius: cornerRadius)
             .fill(background)
             .shadow(color: darkShadow, radius: 7, x: 5, y: 5)

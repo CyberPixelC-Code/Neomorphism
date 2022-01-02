@@ -7,13 +7,19 @@
 
 import SwiftUI
 
-struct NeoFlatOutCircle: View {
+public struct NeoFlatOutCircle: View {
     
-    @State private var background = Color(red: 235/255, green: 235/255, blue: 235/255)
-    @State private var darkShadow = Color(red: 140/255, green: 140/255, blue: 140/255)
-    @State private var lightShadow = Color.white
+    @State private var background: Color
+    @State private var darkShadow: Color
+    @State private var lightShadow: Color
     
-    var body: some View {
+    public init (){
+        background = Color(red: 235/255, green: 235/255, blue: 235/255)
+        darkShadow = Color(red: 140/255, green: 140/255, blue: 140/255)
+        lightShadow = Color.white
+    }
+    
+    public var body: some View {
         Circle()
             .fill(background)
             .shadow(color: darkShadow, radius: 7, x: 5, y: 5)
