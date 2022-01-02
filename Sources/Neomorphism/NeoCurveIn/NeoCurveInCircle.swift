@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NeoCurveInCircle: View {
+public struct NeoCurveInCircle: View {
     
     @State private var background: [Color]
     @State private var darkShadow: Color
@@ -19,7 +19,7 @@ struct NeoCurveInCircle: View {
         lightShadow = Color.white
     }
     
-    var body: some View {
+    public var body: some View {
         Circle()
             .fill(.linearGradient(colors: background, startPoint: .topLeading, endPoint: .bottomTrailing))
             .shadow(color: darkShadow, radius: 7, x: 5, y: 5)
@@ -41,8 +41,8 @@ extension NeoCurveInCircle{
     
 }//End of extension
 
-private struct NeoCurveInCircle_Previews: PreviewProvider {
-    fileprivate static var previews: some View {
+internal struct NeoCurveInCircle_Previews: PreviewProvider {
+    internal static var previews: some View {
         NeoCurveInCircle()
     }
 }

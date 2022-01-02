@@ -47,8 +47,8 @@ extension NeoCurveInRect{
     }//End of func
 }
 
-private struct NeoCurveInRect_Previews: PreviewProvider {
-    fileprivate static var previews: some View {
+internal struct NeoCurveInRect_Previews: PreviewProvider {
+    internal static var previews: some View {
         NeoCurveInRect()
     }
 }
