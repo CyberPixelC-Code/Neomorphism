@@ -29,19 +29,19 @@ public struct NeoCurvOutRect: View {
     }//End of view
 }
 extension NeoCurvOutRect{
-    func forColor(color: [Color]){
+    public func forColor(color: [Color]){
         background = color
     }//End of func
     
-    func darkShadow(color: Color){
+    public func darkShadow(color: Color){
         darkShadow = color
     }//End of func
     
-    func lightShadow(color: Color){
+    public func lightShadow(color: Color){
         lightShadow = color
     }//End of func
     
-    func cornerRadius(cornerRadius: CGFloat){
+    public func cornerRadius(cornerRadius: CGFloat){
         corner = cornerRadius
     }//end of func
     
