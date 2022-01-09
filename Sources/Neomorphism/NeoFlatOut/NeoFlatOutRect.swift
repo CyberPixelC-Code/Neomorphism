@@ -29,19 +29,19 @@ public struct NeoFlatOutRect: View {
     }//End of view
 }
 extension NeoFlatOutRect {
-    func forColor(color: Color){
+    public func forColor(color: Color){
         background = color
     }//End of func
     
-    func lightShadow(color: Color){
+    public func lightShadow(color: Color){
         lightShadow = color
     }//End of func
     
-    func darkShadow(color: Color){
+    public func darkShadow(color: Color){
         darkShadow = color
     }//End of func
     
-    func cornerRadius(corner: CGFloat){
+    public func cornerRadius(corner: CGFloat){
         cornerRadius = corner
     }//End of func
     
