@@ -41,19 +41,19 @@ public struct NeoFlatInRect: View {
     }
 }
 extension NeoFlatInRect{
-    func forColor(color: Color){
+    public func forColor(color: Color){
         background = color
     }//End of func
     
-    func darkShadow(color: Color){
+    public func darkShadow(color: Color){
         darkShadow = color
     }//End of func
     
-    func lightShadow(color: Color){
+    public func lightShadow(color: Color){
         lightShadow = color
     }
     
-    func cornerRadius(cornerRadius: CGFloat){
+    public func cornerRadius(cornerRadius: CGFloat){
         corner = cornerRadius
     }//End of func
     
