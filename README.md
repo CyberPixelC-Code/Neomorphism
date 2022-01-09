@@ -2,12 +2,13 @@
 
 This is package for deigning the view of an IOS applction in the neomorphism style.
 
-v1.1.0
+v1.1.1
 WHATS NEW:
-- All bugs fixed and previews updated
+- Extensions now can be used
 
-This version is based around the basic shapes of cirlces and rectagnles.
+There 2 basic general layout which can be called which are circles and rectangles of the below
 There are 4 versions of the circles and rectangles:
  - Curve Out Raised
  - Curve In Raised
  - Flat Raised
+ - Flat In 
