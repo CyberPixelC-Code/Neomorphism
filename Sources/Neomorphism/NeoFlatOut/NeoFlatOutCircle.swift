@@ -19,6 +19,12 @@ public struct NeoFlatOutCircle: View {
         lightShadow = Color.white
     }
     
+    public init(forground: Color, darkShadow: Color, lightShadow: Color){
+        self.background = forground
+        self.darkShadow = darkShadow
+        self.lightShadow = lightShadow
+    }
+    
     public var body: some View {
         Circle()
             .fill(background)
@@ -26,20 +32,6 @@ public struct NeoFlatOutCircle: View {
             .shadow(color: lightShadow, radius: 7, x: -5, y: -5)
     }//End of view
 }
-extension NeoFlatOutCircle{
-    public func forColor(color: Color){
-        background = color
-    }//End of func
-    
-    public func darkShadow(color: Color){
-        darkShadow = color
-    }//End of fun
-    
-    public func lightShadow(color: Color){
-        lightShadow = color
-    }//End of func
-    
-}//End of extension
 
 internal struct NeoFlatOutCircle_Previews: PreviewProvider {
     internal static var previews: some View {

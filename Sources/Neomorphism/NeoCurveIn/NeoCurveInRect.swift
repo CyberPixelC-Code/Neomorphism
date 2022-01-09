@@ -22,29 +22,19 @@ struct NeoCurveInRect: View {
         corner = 20
     }
     
+    public init(forground: [Color], darkShadow: Color, lightShadow: Color, cornerRadius: CGFloat){
+        self.background = forground
+        self.darkShadow = darkShadow
+        self.lightShadow = lightShadow
+        self.corner = cornerRadius
+    }
+    
     var body: some View {
         RoundedRectangle(cornerRadius: corner)
             .fill(.linearGradient(colors: background, startPoint: .topLeading, endPoint: .bottomTrailing))
             .shadow(color: darkShadow, radius: 7, x: 5, y: 5)
             .shadow(color: lightShadow, radius: 7, x: 5, y: 5)
     }
-}
-extension NeoCurveInRect{
-    public func forColor(color: [Color]){
-        background = color
-    }//End of func
-    
-    public func darkShadow(color: Color){
-        darkShadow = color
-    }//End of func
-    
-    public func lightShadow(color: Color){
-        lightShadow = color
-    }
-    
-    public func cornerRadius(cornerRadius: CGFloat){
-        corner = cornerRadius
-    }//End of func
 }
 
 internal struct NeoCurveInRect_Previews: PreviewProvider {

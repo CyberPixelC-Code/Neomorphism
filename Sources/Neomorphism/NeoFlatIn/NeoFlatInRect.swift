@@ -21,6 +21,13 @@ public struct NeoFlatInRect: View {
         corner = 20
     }
     
+    public init(forground: Color, darkShadow: Color, lightShadow: Color, cornerRadius: CGFloat){
+        self.background = forground
+        self.darkShadow = darkShadow
+        self.lightShadow = lightShadow
+        self.corner = cornerRadius
+    }
+    
     public var body: some View {
         RoundedRectangle(cornerRadius: corner)
             .fill(background)
@@ -40,24 +47,6 @@ public struct NeoFlatInRect: View {
             )//End of overlay
     }
 }
-extension NeoFlatInRect{
-    public func forColor(color: Color){
-        background = color
-    }//End of func
-    
-    public func darkShadow(color: Color){
-        darkShadow = color
-    }//End of func
-    
-    public func lightShadow(color: Color){
-        lightShadow = color
-    }
-    
-    public func cornerRadius(cornerRadius: CGFloat){
-        corner = cornerRadius
-    }//End of func
-    
-}//Emd pf extension
 
 internal struct NeoFlatInRect_Previews: PreviewProvider {
     internal static var previews: some View {

@@ -19,6 +19,12 @@ public struct NeoFlatInCircle: View {
         lightShadow = Color.white
     }
     
+    public init(forground: Color, darkShadow: Color, lightShadow: Color){
+        self.background = forground
+        self.darkShadow = darkShadow
+        self.lightShadow = lightShadow
+    }
+    
     public var body: some View {
         Circle()
             .fill(background)
@@ -36,19 +42,6 @@ public struct NeoFlatInCircle: View {
                     .blur(radius: 4)
                     .mask(Circle())
             )//End of overlay
-    }
-}
-extension NeoFlatInCircle{
-    public func forColor(color: Color){
-        background = color
-    }//End of func
-    
-    public func darkShadow(color: Color){
-        darkShadow = color
-    }//End of func
-    
-    public func lightShadow(color: Color){
-        lightShadow = color
     }
 }
 

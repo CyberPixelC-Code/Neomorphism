@@ -21,6 +21,13 @@ public struct NeoCurvOutRect: View {
         corner = 20
     }
     
+    public init(forground: [Color], darkShadow: Color, lightShadow: Color, cornerRadius: CGFloat){
+        self.background = forground
+        self.darkShadow = darkShadow
+        self.lightShadow = lightShadow
+        self.corner = cornerRadius
+    }
+    
     public var body: some View {
         RoundedRectangle(cornerRadius: corner)
             .fill(.linearGradient(colors: background, startPoint: .topLeading, endPoint: .bottomTrailing))
@@ -28,24 +35,6 @@ public struct NeoCurvOutRect: View {
             .shadow(color: lightShadow, radius: 7, x: -5, y: -5)
     }//End of view
 }
-extension NeoCurvOutRect{
-    public func forColor(color: [Color]){
-        background = color
-    }//End of func
-    
-    public func darkShadow(color: Color){
-        darkShadow = color
-    }//End of func
-    
-    public func lightShadow(color: Color){
-        lightShadow = color
-    }//End of func
-    
-    public func cornerRadius(cornerRadius: CGFloat){
-        corner = cornerRadius
-    }//end of func
-    
-}//End of extension
 
 internal struct NeoCurvOutRect_Previews: PreviewProvider {
     internal static var previews: some View {
