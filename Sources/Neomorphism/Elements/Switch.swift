@@ -13,6 +13,11 @@ public struct Switch: View {
     @State private var height: CGFloat
     @State private var tapped: Bool = false
     
+    public init (){
+        self.width = 80
+        self.height = 40
+    }
+    
     public init (width: CGFloat, height: CGFloat){
         self.width = width
         self.height = height

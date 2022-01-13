@@ -1,9 +1,6 @@
 //
 //  NeoCurveInCircle.swift
 //  Neomorphism
-//
-//  Created by Josh Steadman on 30/12/2021.
-//
 
 import SwiftUI
 
