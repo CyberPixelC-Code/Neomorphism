@@ -83,7 +83,7 @@ public struct NeoRectCurveOut: ViewModifier{
     @State private var corner: CGFloat
     
     public init(){
-        self.background = [Color(red: 250/255, green: 250/255, blue: 250/255), Color(red: 212/255, green: 212/255, blue: 212/255)]
+        self.background = [Color(red: 249/255, green: 250/255, blue: 250/255), Color(red: 212/255, green: 212/255, blue: 212/255)]
         self.darkShadow = Color(red: 140/255, green: 140/255, blue: 140/255)
         self.lightShadow = Color.white
         self.cornerRadius = 20
