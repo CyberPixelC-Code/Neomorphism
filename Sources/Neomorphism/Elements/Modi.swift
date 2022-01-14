@@ -5,7 +5,7 @@
 import SwiftUI
 
 public struct NeoRectFlatOut: ViewModifier{
-    @State private var backgrond: Color
+    @State private var background: Color
     @State private var darkShadow: Color
     @State private var lightShadow: Color
     @State private var corner: CGFloat
@@ -14,11 +14,11 @@ public struct NeoRectFlatOut: ViewModifier{
         self.background = Color(red: 235/255, green: 235/255, blue: 235/255)
         self.darkShadow = Color(red: 140/255, green: 140/255, blue: 140/255)
         self.lightShadow = Color.white
-        self.cornerRadius = 20
+        self.corner = 20
     }//End of default init
     
     public init(background: Color, darkShadow: Color, lightShadow: Color, cornerRadius: CGFloat){
-        self.backgrond = background
+        self.background = background
         self.darkShadow = darkShadow
         self.lightShadow = lightShadow
         self.corner = cornerRadius
@@ -41,10 +41,10 @@ public struct NeoRectFlatIn: ViewModifier{
     @State private var corner: CGFloat
     
     public init(){
-        self.background = Color(red: 235/255, green: 235/255, blue: 235/255)
+        self.backgrond = Color(red: 235/255, green: 235/255, blue: 235/255)
         self.darkShadow = Color(red: 140/255, green: 140/255, blue: 140/255)
         self.lightShadow = Color.white
-        self.cornerRadius = 20
+        self.corner = 20
     }//End of default init
     
     public init(background: Color, darkShadow: Color, lightShadow: Color, cornerRadius: CGFloat){
@@ -83,13 +83,13 @@ public struct NeoRectCurveOut: ViewModifier{
     @State private var corner: CGFloat
     
     public init(){
-        self.background = [Color(red: 249/255, green: 250/255, blue: 250/255), Color(red: 212/255, green: 212/255, blue: 212/255)]
+        self.backgrond = [Color(red: 249/255, green: 250/255, blue: 250/255), Color(red: 212/255, green: 212/255, blue: 212/255)]
         self.darkShadow = Color(red: 140/255, green: 140/255, blue: 140/255)
         self.lightShadow = Color.white
-        self.cornerRadius = 20
+        self.corner = 20
     }//End of default init
     
-    public init(background: Color, darkShadow: Color, lightShadow: Color, cornerRadius: CGFloat){
+    public init(background: [Color], darkShadow: Color, lightShadow: Color, cornerRadius: CGFloat){
         self.backgrond = background
         self.darkShadow = darkShadow
         self.lightShadow = lightShadow
@@ -113,13 +113,13 @@ public struct NeoRectCurveIn: ViewModifier{
     @State private var corner: CGFloat
     
     public init(){
-        self.background = [Color(red: 250/255, green: 250/255, blue: 250/255), Color(red: 212/255, green: 212/255, blue: 212/255)]
+        self.backgrond = [Color(red: 250/255, green: 250/255, blue: 250/255), Color(red: 212/255, green: 212/255, blue: 212/255)]
         self.darkShadow = Color(red: 140/255, green: 140/255, blue: 140/255)
         self.lightShadow = Color.white
-        self.cornerRadius = 20
+        self.corner = 20
     }//End of default init
     
-    public init(background: Color, darkShadow: Color, lightShadow: Color, cornerRadius: CGFloat){
+    public init(background: [Color], darkShadow: Color, lightShadow: Color, cornerRadius: CGFloat){
         self.backgrond = background
         self.darkShadow = darkShadow
         self.lightShadow = lightShadow
