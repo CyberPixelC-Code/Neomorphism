@@ -27,9 +27,9 @@ public struct NeoRectFlatOut: ViewModifier{
     public func body(content: Content) -> some View {
         content
             .background(background)
+            .cornerRadius(corner)
             .shadow(color: darkShadow, radius: 7, x: 5, y: 5)
             .shadow(color: lightShadow, radius: 7, x: -5, y: -5)
-            .cornerRadius(corner)
     }//End of func
     
 }//End of struct
