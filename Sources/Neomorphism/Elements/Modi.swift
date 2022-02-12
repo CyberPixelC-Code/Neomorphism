@@ -28,8 +28,8 @@ public struct NeoRectFlatOut: ViewModifier{
         content
             .background(background)
             .cornerRadius(corner)
-            .shadow(color: lightShadow, radius: 7, x: -5, y: -5)
             .shadow(color: darkShadow, radius: 7, x: 5, y: 5)
+            .shadow(color: lightShadow, radius: 7, x: -5, y: -5)
     }//End of func
     
 }//End of struct
@@ -60,15 +60,15 @@ public struct NeoRectFlatIn: ViewModifier{
             .cornerRadius(corner)
             .overlay(
                 RoundedRectangle(cornerRadius: corner)
-                    .stroke(lightShadow, lineWidth: 5)
-                    .offset(x: -5, y: -5)
+                    .stroke(darkShadow, lineWidth: 5)
+                    .offset(x: 5, y: 5)
                     .blur(radius: 4)
                     .mask(RoundedRectangle(cornerRadius: corner))
             )//End of overlay
             .overlay(
                 RoundedRectangle(cornerRadius: corner)
-                    .stroke(darkShadow, lineWidth: 5)
-                    .offset(x: 5, y: 5)
+                    .stroke(lightShadow, lineWidth: 5)
+                    .offset(x: -5, y: -5)
                     .blur(radius: 4)
                     .mask(RoundedRectangle(cornerRadius: corner))
             )//End of overlay
@@ -101,7 +101,7 @@ public struct NeoRectCurveOut: ViewModifier{
             .background(LinearGradient(colors: backgrond, startPoint: .topLeading, endPoint: .bottomTrailing))
             .cornerRadius(corner)
             .shadow(color: darkShadow, radius: 7, x: 5, y: 5)
-            .shadow(color: lightShadow, radius: 7, x: 5, y: 5)
+            .shadow(color: lightShadow, radius: 7, x: -5, y: -5)
     }//End of func
     
 }//End of struct
@@ -132,15 +132,15 @@ public struct NeoRectCurveIn: ViewModifier{
             .cornerRadius(corner)
             .overlay(
                 RoundedRectangle(cornerRadius: corner)
-                    .stroke(lightShadow, lineWidth: 5)
-                    .offset(x: -5, y: -5)
+                    .stroke(darkShadow, lineWidth: 5)
+                    .offset(x: 5, y: 5)
                     .blur(radius: 4)
                     .mask(RoundedRectangle(cornerRadius: corner))
             )//End of overlay
             .overlay(
                 RoundedRectangle(cornerRadius: corner)
-                    .stroke(darkShadow, lineWidth: 5)
-                    .offset(x: 5, y: 5)
+                    .stroke(lightShadow, lineWidth: 5)
+                    .offset(x: -5, y: -5)
                     .blur(radius: 4)
                     .mask(RoundedRectangle(cornerRadius: corner))
             )//End of overlay
